@@ -39,5 +39,5 @@ Good luck!
 
 ## Run Louis App
 
-The app is written using Angular, Redux and Typescript
+The app is written using Angular, Redux and Typescript.
 ng serve is the command you will need to use to serve the app. Once then visit localhost:4200/main to play around with it.
