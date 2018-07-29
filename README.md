@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Run Louis App
+
+The app is written using Angular, Redux and Typescript
+ng serve is the command you will need to use to serve the app. Once then visit localhost:4200/main to play around with it.

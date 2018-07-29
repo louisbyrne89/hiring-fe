@@ -1,0 +1,13 @@
+.node-header,.node-content {
+    padding: .5em .7em;
+}
+
+.node-header {
+    background-color: #5fd7db;
+    color: #ffffff;
+}
+
+.node-content {
+    text-align: center;
+    border: 0px;
+}

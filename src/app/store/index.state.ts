@@ -1,11 +1,12 @@
 import { makeTypedFactory, TypedRecord } from 'typed-immutable-record';
+import { IMainStateRecord, MainStateFactory } from '../workflow/main/main.state';
 
 export interface IAppState {
-  router: string;
+  main: IMainStateRecord;
 }
 
 const INITIAL_APP_STATE: IAppState = {
-  router: ''
+  main: MainStateFactory()
 };
 
 export const AppFactory = makeTypedFactory<IAppState, IAppStateRecord>(INITIAL_APP_STATE);

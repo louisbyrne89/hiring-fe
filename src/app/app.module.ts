@@ -4,6 +4,7 @@ import { StoreModule } from './store/store.module';
 import { NgReduxModule } from '@angular-redux/store';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { WorkflowModule } from './workflow/workflow.module'
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AppRoutingModule } from './/app-routing.module';
     BrowserModule,
     StoreModule,
     NgReduxModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WorkflowModule
   ],
   providers: [],
   bootstrap: [AppComponent]

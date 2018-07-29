@@ -1,0 +1,16 @@
+<p-panel *ngIf="workflowLoadedObs | async; else notLoadedTemplate">
+   <h1 style="text-align: center">{{ workflowNameObs | async }}</h1>
+    <p style="text-align: center">{{ workflowDescriptionObs | async }}</p>
+    <app-visualisation></app-visualisation>
+    <p-button (onClick)="download()" [disabled]="!(workflowModifiedObs | async)" label="Download"></p-button>
+</p-panel>
+
+<p-dialog [(visible)]="display">
+    <app-file-upload></app-file-upload>
+</p-dialog>
+
+<ng-template #notLoadedTemplate>
+    <p-card class="centered">
+        <button type="text" (click)="display = true" pButton icon="pi pi-plus" label="Upload JSON"></button>
+    </p-card>
+</ng-template>

@@ -1,0 +1,9 @@
+<p-organizationChart [value]="data">
+    <ng-template let-node pTemplate="person">
+      <div class="node-header ui-corner-top">{{node.label}}</div>
+      <div *ngIf="node.data.id !== sink && node.data.id !== source" class="node-content">
+        <br>
+        <p-button (onClick)="deleteNode(node.data.id)" icon="pi pi-times" label="Delete"></p-button>
+      </div>
+  </ng-template>
+</p-organizationChart>
